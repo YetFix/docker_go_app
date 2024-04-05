@@ -1,0 +1,17 @@
+### Instructions 
+
+1. Built GO image using https://github.com/xaadu/ostad_docker_assignment_1_batch_1.
+
+2. Built the multistaged image using this command:
+    ```bash
+    docker build -t <specified_name>:<specified_tag> 
+    ```
+3. Multistaged image size is 25.4 mb and single staged image is over 1000 mbs.
+4. Run the image using this command:
+    ```bash
+    docker run --rm -p <specified_port>:9000 <specified_image_name>
+    ```
+
+### Check if the server is running
+1. Go to `http://localhost:<given_port>` and check if you see "`Hello, from Ostad! <3`".
+2. Go to `http://localhost:<given_port>/healthcheck` and check if you see "`{"Status": "OK"}`".
